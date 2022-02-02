@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import { useFonts, DMSans_400Regular } from '@expo-google-fonts/dm-sans';
 import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
 import { ThemeProvider } from 'styled-components';
 
-import theme from './src/theme';
+import { SignIn } from '@screens/SignIn';
 
-import { SignIn } from '@src/screens/SignIn';
+import theme from './src/theme';
 
 export default function App() {
 
@@ -25,7 +23,7 @@ export default function App() {
   return (
     //usando o tema criado na pasta theme
     <ThemeProvider theme={theme} >
-      <SignIn />
+      <SignIn />  
     </ThemeProvider>
   );
 }
