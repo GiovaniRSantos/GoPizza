@@ -1,5 +1,3 @@
-import 'module-alias/register';
-
 module.exports = function (api) {
   api.cache(true);
   return {
@@ -18,7 +16,7 @@ module.exports = function (api) {
             '@components': './src/components',
             '@screens': './src/screens',
             '@assets': './src/assets',
-            '@hooks': './src/hooks',
+            '@hooks': './src/hooks'
           }
         }
       ]
